@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Web Studio</title> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
   <header class="headd">
     <div class="container header-container">
       <nav class="nvvv">
-        <a href="./index.html" class="page-title">Web<span class="studio">Studio</span></a>
+        <a href="./index.html" class="page-title header-logo">Web<span class="studio">Studio</span></a>
           <ul class="menuu">
             <li class="menufile-li-header"><a href="./index.html" class="current">Studio</a></li>
             <li class="menufile-li-header"><a href="" class="menufiles">Portfolio</a></li>
@@ -32,17 +33,41 @@
       </ul>
         </address>
       </div>
+
+      <div class="mobile-container backdrop ">
+        <div class="container mobile-menu-container ">
+          <button type="button" class="but-hidden-overplay" id="closeModal">
+            <svg class="modal-overlay-svgfile-but" width="8" height="8">
+              <use href="./images/modal-icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="nav-mobile-menu">
+            <a href="./index.html" class="page-title">Web<span class="studio studio-mobile">Studio</span></a>
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-link"><a href="./index.html" class="menufiles menufiles-phone">Studio</a></li>
+                <li class="mobile-menu-link"><a href="" class="menufiles menufiles-phone">Portfolio</a></li>
+                <li class="mobile-menu-link"><a href="" class="menufiles menufiles-phone">Contacts</a></li>
+              </ul>
+            </nav>
+            <address class="mobile-menu-contacts">
+              <ul class="mobile-menu-contacts-list">
+            <li><a href="mailto:info@devstudio.com" class="mobile-menu-contacts-link">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111" class="mobile-menu-contacts-link">+11 (000) 111-11-11</a></li>
+          </ul>
+            </address>
+          </div>
+      </div>
    </header>
 
   <main>
-  <section class="sect">
+  <section class="sect sect-hidden">
     <div class="container">
   <h1 class="effective">Effective Solutions for Your Business</h1>
   <button type="button" class="but">Order Service</button>
   </div>
   </section>
   
-  <section class="secttwo">
+  <section class="page">
     <div class="container">
     <h2 class="visually-hidden">Benefits</h2>
   <ul class="secondpage">
@@ -349,7 +374,7 @@ Subscribe
  <!-- Modal screen -->
 <div class="modal-overlay backdrop" id="modalBackdrop">
   <div class="modal">
-    <button type="button" class="but-hidden-overplay" id="closeModal">
+    <button type="button" class="but-hidden-overplay" id="closemodal">
       <svg class="modal-overlay-svgfile-but" width="8" height="8">
         <use href="./images/modal-icons.svg#icon-close-black"></use>
       </svg>
