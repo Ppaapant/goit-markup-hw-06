@@ -179,18 +179,19 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     line-height: 1.15;
     letter-spacing: 0.02em;
     }
+    
     .addr {
-      flex-direction: row;
-      align-items: center;
-      gap: 40px;
-    }
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+  }
   }
 
   @media screen and (min-width: 768px) {
     .addr {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
     }
 }
 
@@ -1036,13 +1037,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   border: none;
   fill: #f4f4fd;
 }
-.modal-overlay-svgfile-email{
+.modal-overlay-svgfile-email {
   position: absolute;
   left: 16px;
-  top: 50%; 
+  top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .modal-button {
   font-family: 'Roboto', sans-serif;
