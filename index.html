@@ -28,7 +28,7 @@
         </nav>
         <address class="addresss">
           <ul class="addr">
-        <li><a href="mailto:info@devstudio.com" class="number">info@devstudio.com</a></li>
+        <li><a href="mailto:info@devstudio.com" class="number numone">info@devstudio.com</a></li>
         <li><a href="tel:+110001111111" class="number">+11 (000) 111-11-11</a></li>
       </ul>
         </address>
@@ -39,27 +39,55 @@
         </button>
       </div>
 
-      <div class="mobile-container backdrop ">
+      <div class="mobile-container backdrop is-open">
         <div class="container mobile-menu-container ">
           <button type="button" class="but-hidden-overplay" id="closeModal">
             <svg class="modal-overlay-svgfile-but" width="8" height="8">
-              <use href="./images/modal-icons.svg#icon-close-black-18dp-2-1"></use>
+              <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
           <nav class="nav-mobile-menu">
-            <a href="./index.html" class="page-title">Web<span class="studio studio-mobile">Studio</span></a>
+            
               <ul class="mobile-menu-list">
-                <li class="mobile-menu-link"><a href="./index.html" class="menufiles menufiles-phone">Studio</a></li>
-                <li class="mobile-menu-link"><a href="" class="menufiles menufiles-phone">Portfolio</a></li>
-                <li class="mobile-menu-link"><a href="" class="menufiles menufiles-phone">Contacts</a></li>
+                <li class="mobile-menu-adress"><a href="./index.html" class="current menufiles-phone">Studio</a></li>
+                <li class="mobile-menu-adress"><a href="" class="menufiles menufiles-phone">Portfolio</a></li>
+                <li class="mobile-menu-adress"><a href="" class="menufiles menufiles-phone">Contacts</a></li>
               </ul>
             </nav>
             <address class="mobile-menu-contacts">
               <ul class="mobile-menu-contacts-list">
+                <li><a href="tel:+110001111111" class=" phone">+11 (000) 111-11-11</a></li>
             <li><a href="mailto:info@devstudio.com" class="mobile-menu-contacts-link">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111" class="mobile-menu-contacts-link">+11 (000) 111-11-11</a></li>
+            
           </ul>
             </address>
+
+
+            <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
+              ></a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href="">
+                <svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href=""
+                ><svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="mobile-social-link" href=""
+                ><svg width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a>
+            </li>
+          </ul>
           </div>
       </div>
    </header>
@@ -117,7 +145,7 @@
   <div class="container">
   <h2 class="team">Our Team</h2>
  <ul class="teams">
- <li class="goteam"><img src="./images/tty.jpg" class="main-photo" width="264" alt="Mark Guerro"/>
+ <li class="goteam"><img    src="../goit-markup-hw-06/images/tty.jpg" class="main-photo" srcset="../goit-markup-hw-06/images/tty.jpg, ../goit-markup-hw-06/images/mark.jpg"   width="264" alt="Mark Guerro"/>
  <div class="afff"><h3 class="teamgo">Mark Guerrero</h3>
  <p class="parag">Product Designer</p>
 
@@ -152,7 +180,12 @@
 </li>
 </ul>
 </div></li>
- <li class="goteam"><img src="./images/Goit.jpg" class="main-photo" width="264" alt="Tom Ford" />
+ <li class="goteam"><img 
+  src="./images/Goit.jpg"
+  srcset="./images/Goit.jpg, ./images/tom.jpg"
+   class="main-photo" 
+   width="264"
+    alt="Tom Ford" />
   <div class="afff"><h3 class="teamgo">Tom Ford</h3>
  <p class="parag">Frontend Developer</p>
  <ul class="icons-number-three">
@@ -186,7 +219,12 @@
   </li>
   </ul>
 </div></li>
- <li class="goteam"><img src="./images/ggoo.jpg" class="main-photo" width="264" alt="Camila Garcia" />
+ <li class="goteam"><img 
+  src="./images/ggoo.jpg"
+  srcset="./images/ggoo.jpg, ./images/camila.jpg"
+   class="main-photo"
+    width="264"
+     alt="Camila Garcia" />
   <div class="afff"><h3 class="teamgo">Camila Garcia</h3>
  <p class="parag">Marketing</p>
  <ul class="icons-number-three">
@@ -220,7 +258,7 @@
   </li>
   </ul>
 </div></li>
- <li class="goteam"><img src="./images/ggo.jpg" class="main-photo" width="264" alt="Daniel Wilson" />
+ <li class="goteam"><img src="./images/ggo.jpg" srcset="./images/ggo.jpg, ./images/daniel.jpg" class="main-photo" width="264" alt="Daniel Wilson" />
   <div class="afff"><h3 class="teamgo">Daniel Wilson</h3>
  <p class="parag">UI Designer</p>
  <ul class="icons-number-three">
@@ -408,7 +446,7 @@
         <div class="form-div-email">
           <input type="text" id="user-name" name="user-name" class="input-email-username"/>
           <svg class="modal-overlay-svgfile-email" width="18" height="24">
-            <use href="./images/symbol-defs.svg#icon-person-blackk"></use>
+            <use href="./images/black.svg#icon-person-black-18dp-1-1"></use>
           </svg>
         </div>
       </div>
@@ -442,8 +480,10 @@
               <use href="./images/symbol-defs.svg#icon-Vector"></use>
             </svg>
           </span>
+          <span>
           I accept the terms and conditions of the 
           <a href="#" class="privacy_policy_link">Privacy Policy</a>
+        </span>
         </label>
       </div>
       <button class="modal-button" type="submit">Send</button>
