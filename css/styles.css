@@ -65,13 +65,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     display:none;
   }
 }
-  @media screen and (min-width:768){
-    address {
-      display: block;
-      font-style: italic;
-      unicode-bidi: isolate;
-  }
-  }
+  
 
   .page-title{
     font-family: 'Raleway', sans-serif;
@@ -95,23 +89,21 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     padding: 0;
     border: 0;
     background-color: transparent;
+    margin-left: auto;
   }
-  @media screem and (min-width:768px){
-  .addresss {
-    font-style: normal;
-    display: block;
-  }
-}
+
   .number {
     display: block;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
-    margin-bottom: 10px;
+    ;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  
   .menufiles:hover,
   .menufiles:focus,
 .addr :hover,
@@ -170,10 +162,23 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
           border-radius: 2px;
           background-color: #404bbf;
       }
-      .addr{
-        margin-top:5px;
-      }
-        
+      
+      .addr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .container {
+      max-width: 768px;
+    }
+
+    address {
+      display: block;
+      font-style: normal;
+      
+  }
       }
   
   @media screen and (min-width: 1158px) {
@@ -193,40 +198,25 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     
     }
     .addr {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-  }
-  }
-
-  
-  @media screen and (min-width: 768px) {
-    .addr {
       flex-direction: row;
       align-items: center;
       gap: 40px;
-    }
-    
-}
-@media screen and (max-width:767px){
-
-  .page-title{
-    z-index:1
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
 
-@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
     align-items: center;
   }
-}
+  }
+
+  
+ 
+
+
+
+
+
 
 
 
@@ -657,7 +647,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   .icons-number-three {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 15px;
     margin-top: 8px;
   }
 
@@ -685,8 +675,13 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   .page-logo-icon {
     fill: #f4f4fd;
   }
+ @media screen and (max-width:767px)
+{
+  .container-third{max-width: 320px;
+  }
+}
 
-  @media screen and (max-width:1150px){
+  @media screen and (min-width: 768px) and (max-width: 1150px){
     .container-third{
       max-width:585px;
   }
@@ -700,16 +695,16 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     .goteam {
       width: calc((100% - 24px) / 2);
     }
-    
+  }    
   @media screen and (min-width: 1158px) {
     .goteam{
       width: calc((100% - 72px) / 4);
     }
     .set{
-      padding:20px;
+      padding:120px;
     }
   }
-}
+
 
 
 .visually-hidden {
@@ -832,14 +827,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .footer-container {
   display: flex;
   flex-direction: column;
- 
+  gap: 60px;
   
 }
 .footer-container-top {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom:50px;
+  
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -877,7 +872,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   color: #fff;
   text-align: center;
   margin-bottom: 16px;
-  margin-top:50px;
+ 
 }
 .footer-input {
   font-weight: 400;
@@ -927,13 +922,20 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   fill: #fcfcfc;
   margin-left: 16px;
 }
+
+@media screen and (max-width:1157px){
+  .footer-container {
+  
+    padding-left: 108px;
+  }
+}
 @media screen and (min-width: 768px) {
  
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    padding-left: 108px;
+    
   }
   .footer-container-top {
     display: flex;
@@ -956,8 +958,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   .footer-container {
     display: flex;
     align-items: baseline;
-    padding: 100px 15px;
-             column-gap: 0;
+    
+   column-gap: 0;
   }
   .footer-container-top {
     margin-right: 104px;
